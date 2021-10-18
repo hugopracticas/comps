@@ -1,8 +1,13 @@
 <app-divider>
     Table Components
 </app-divider>
-<app-table
-    classNames="striped celled"
-    [data]="data" 
-    [headers]="headers">
+<app-table classNames="striped celled" [data]="data" [headers]="headers">
 </app-table>
+
+<app-divider>Tab Menu</app-divider>
+<app-tabs>
+    <a class="item" routerLink="/collections" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">Biography</a>
+    <a class="item" routerLink="./companies" routerLinkActive="active">Companies</a>
+    <a class="item" routerLink="./partners" routerLinkActive="active">Partners</a>
+</app-tabs>
